@@ -1,0 +1,21 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 15, 2021, 8:57:32 PM
+    Author     : DELL
+*/
+@font-face {
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+.label{
+   -fx-font-family:'Open Sans';
+   -fx-font-size:14px;
+}
+
+.transat:hover{
+    -fx-background-color: #CDCDCD;
+}

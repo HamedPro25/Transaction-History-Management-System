@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="panet" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" style="-fx-background-color: null;" stylesheets="@dashboard_style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System_managmnet.Dashboard_uiController">
+   <children>
+      <VBox layoutX="85.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="53.0" prefWidth="580.0" stylesheets="@contact_view_style.css">
+               <children>
+                  <Label text="Shortcuts">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <GridPane prefHeight="185.0" prefWidth="580.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="-24.0" layoutY="-46.0" prefHeight="200.0" prefWidth="235.0" style="-fx-background-color: white; -fx-border-color: #CDCDCD; -fx-border-width: 2px;" styleClass="shortcuts" stylesheets="@dashboard_style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="76.0" layoutY="4.0" prefHeight="69.0" prefWidth="218.0" styleClass="shorts" stylesheets="@dashboard_style.css" text="  Dashboard" textAlignment="RIGHT" textOverrun="LEADING_ELLIPSIS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="69.0" prefWidth="75.0" style="-fx-background-color: #3567c4;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="18.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="18.0">
+                                       <image>
+                                          <Image url="@../icons/185038-32.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow choke="0.17" color="#3567c4" radius="11.4825" width="26.93" />
+                           </effect>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <AnchorPane layoutX="23.0" layoutY="-62.0" onMouseClicked="#GOStat" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #CDCDCD; -fx-border-width: 2px; -fx-background-color: white;" styleClass="shortcuts" stylesheets="@dashboard_style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <Label alignment="TOP_LEFT" layoutX="77.0" layoutY="4.0" prefHeight="69.0" prefWidth="214.0" styleClass="shorts" stylesheets="@dashboard_style.css" text="  Statistcs" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <AnchorPane layoutX="6.0" layoutY="4.0" prefHeight="69.0" prefWidth="75.0" style="-fx-background-color: #35c49b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="18.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/iconfinder_2849805_pie%20chart_stats_multimedia_statistics_icon_64px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow choke="0.14" color="#35c49b" height="23.97" radius="10.7425" />
+                           </effect>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <AnchorPane layoutX="33.0" layoutY="-54.0" onMouseClicked="#GOTransaction" prefHeight="52.0" prefWidth="284.0" style="-fx-border-color: #CDCDCD; -fx-border-width: 2px; -fx-background-color: white;" styleClass="shortcuts" stylesheets="@dashboard_style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="-77.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <Label alignment="TOP_LEFT" layoutX="76.0" layoutY="4.0" prefHeight="68.0" prefWidth="275.0" styleClass="shorts" stylesheets="@dashboard_style.css" text="  Ajouter transaction" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <AnchorPane layoutX="-50.0" layoutY="-86.0" prefHeight="52.0" prefWidth="75.0" style="-fx-background-color: #c45b35;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="200.0" layoutX="18.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/iconfinder_4115237_add_plus_icon_64px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow choke="0.14" color="#c45b35" radius="12.965" width="32.86" />
+                           </effect>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <AnchorPane layoutX="-94.0" layoutY="-45.0" onMouseClicked="#GOAddContact" prefHeight="52.0" prefWidth="278.0" style="-fx-border-color: #CDCDCD; -fx-border-width: 2px; -fx-background-color: white;" styleClass="shortcuts" stylesheets="@dashboard_style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="-94.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <Label alignment="TOP_LEFT" layoutX="76.0" layoutY="4.0" prefHeight="68.0" prefWidth="269.0" styleClass="shorts" stylesheets="@dashboard_style.css" text="  Ajouter Contact" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <AnchorPane layoutX="-86.0" layoutY="-74.0" prefHeight="52.0" prefWidth="75.0" style="-fx-background-color: #c4ac35;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="60.0" fitWidth="63.0" layoutX="8.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/iconfinder_2542759_add%20contact_add%20user_profile_user_icon_64px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow choke="0.53" color="#bba433" height="26.93" radius="13.7075" width="29.9" />
+                           </effect>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <AnchorPane layoutX="-10.0" layoutY="-61.0" onMouseClicked="#GOContacts" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: CDCDCD; -fx-border-width: 2px; -fx-background-color: white;" styleClass="shortcuts" stylesheets="@dashboard_style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="77.0" layoutY="4.0" prefHeight="69.0" prefWidth="214.0" styleClass="shorts" stylesheets="@dashboard_style.css" text="  Voir contacts" textFill="#1b1b1b" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <AnchorPane layoutX="-79.0" layoutY="-73.0" prefHeight="53.0" prefWidth="75.0" style="-fx-background-color: #b135c4;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="18.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/iconfinder_103796_view_icon_64px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow choke="0.1" color="#b135c4" height="32.87" radius="13.709999999999999" width="23.97" />
+                           </effect>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+            <HBox prefHeight="43.0" prefWidth="580.0">
+               <children>
+                  <Label text="Summary">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <GridPane prefHeight="264.0" prefWidth="740.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="33.0" layoutY="-25.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-width: 1px; -fx-border-color: #CDCDCD; -fx-border-radius: 10; -fx-background-radius: 10;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <ImageView fitHeight="157.0" fitWidth="155.0" layoutX="33.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/fMMyo.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="contactNb" alignment="CENTER" layoutX="34.0" layoutY="42.0" prefHeight="50.0" prefWidth="155.0" text="25" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="34.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="87.0" layoutY="112.0" text="Contact" textFill="#5b6166">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="144.0" styleClass="subtit" text="Algerie" />
+                              <Label layoutX="14.0" layoutY="191.0" styleClass="subtit" text="Emirates" />
+                              <Label fx:id="aed" layoutX="212.0" layoutY="191.0" text="6" />
+                              <Label fx:id="dz" layoutX="212.0" layoutY="144.0" text="6" />
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="215.0" prefWidth="247.0" GridPane.columnIndex="1">
+                     <children>
+                        <AnchorPane layoutX="24.0" layoutY="4.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-width: 1px; -fx-border-color: #CDCDCD; -fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <ImageView fitHeight="143.0" fitWidth="155.0" layoutX="43.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/mNkqM.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="transatNb" alignment="CENTER" layoutX="30.0" layoutY="54.0" prefHeight="50.0" prefWidth="170.0" text="25">
+                                 <font>
+                                    <Font name="System Bold" size="34.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="76.0" layoutY="112.0" text="Transactions" textFill="#5b6166">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="201.0" styleClass="subtit" text="Aoujourd'hui">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                              <Label fx:id="todtransat" layoutX="202.0" layoutY="201.0" text="5">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font></Label>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </AnchorPane>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="12.0" prefHeight="244.0" prefWidth="255.0" style="-fx-background-color: white; -fx-border-width: 1px; -fx-border-color: #CDCDCD; -fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <ImageView fitHeight="163.0" fitWidth="181.0" layoutX="26.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="10.0">
+                                 <image>
+                                    <Image url="@../icons/121-1219777_free-add-comic-circle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="dzprofit" alignment="CENTER" layoutX="37.0" layoutY="52.0" prefHeight="50.0" prefWidth="155.0" text="25 DZ">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="80.0" layoutY="112.0" text="Porfit en DZ" textFill="#5b6166">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="19.0" layoutY="205.0" styleClass="subtit" text="En AED">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="aedprofit" layoutX="163.0" layoutY="205.0" prefHeight="25.0" prefWidth="53.0" text="5 AED">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="69.0" layoutY="168.0" text="Ce mois">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </AnchorPane>
+                     </children></AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

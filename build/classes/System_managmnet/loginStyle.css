@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 18, 2021, 1:27:00 PM
+    Author     : DELL
+*/
+
+.text-field:focused {
+    -fx-focus-color: white;
+}
+.text-field {
+    -fx-background-color: transparent;
+}
+.pass{
+    -fx-background-color: transparent;
+}
+.pass:focused{
+    -fx-background-color: transparent;
+}
+.logs{
+    -fx-background-color: linear-gradient(to right, #FE775E,#FFAE5D);
+}
+.logs:focused{
+    -fx-border-color: #F3F6FB;
+}
+logs.hover{
+    
+}

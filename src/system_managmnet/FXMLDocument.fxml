@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="big_pane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: transparent;" styleClass="right-page-turn" stylesheets="@dashboard_style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System_managmnet.FXMLDocumentController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="600.0" prefWidth="1015.0">
+               <children>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3.0" prefWidth="1000.0" style="-fx-background-color: #F26A4E;" />
+                  <HBox id="menu" fx:id="drag_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="1000.0" stylesheets="@dashboard_style.css">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="44.0" fitWidth="129.0" layoutX="43.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/NicePng_warehouse-icon-png_1212543.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="dash_button" onMouseClicked="#dashOpen" prefHeight="48.0" prefWidth="102.0" styleClass="titles" text="  DashBoard" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Open Sans Semibold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="contacts" onMouseClicked="#change_contacts" prefHeight="46.0" prefWidth="95.0" styleClass="titles" text="    Contacts" textFill="WHITE">
+                           <font>
+                              <Font name="Open Sans Semibold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="transition_button" onMouseClicked="#transitOpen" prefHeight="48.0" prefWidth="118.0" styleClass="titles" text="  Transactions" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Open Sans Semibold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="stat_button" onMouseClicked="#statOpen" prefHeight="46.0" prefWidth="122.0" styleClass="titles" text="     Statistics" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="60.0" text=" " />
+                        <Label prefHeight="18.0" prefWidth="17.0" text=" " />
+                        <ImageView fitHeight="19.0" fitWidth="22.0" onMouseClicked="#notifOpen" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/2203538-64.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Label prefHeight="47.0" prefWidth="10.0" text=" " />
+                        <ImageView fitHeight="47.0" fitWidth="1.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/avatar-round.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="20.0" prefWidth="220.0" text="  Hakim zahnit" textFill="WHITE">
+                           <font>
+                              <Font name="Open Sans Regular" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" onMouseClicked="#closeup" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/211650-64.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <AnchorPane fx:id="change_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" style="-fx-background-color: #f5f5f5;" VBox.vgrow="NEVER" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <effect>
+      <DropShadow height="71.41" offsetX="1.0" offsetY="1.0" radius="27.79" spread="0.17" width="41.75" />
+   </effect>
+</AnchorPane>

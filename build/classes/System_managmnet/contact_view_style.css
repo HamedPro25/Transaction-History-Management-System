@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 15, 2021, 12:07:32 PM
+    Author     : DELL
+*/
+
+
+
+@font-face {
+    src: url('../fonts/OpenSans-SemiBold.ttf');
+}
+@font-face { 
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+.columns{
+    -fx-font-family:'Open Sans SemiBold';
+    -fx-font-size:16px;
+}
+.list-view .list-cell:even {
+-fx-text-fill: black;
+-fx-border-color: white;
+-fx-background-color:white;
+}
+.list-view .list-cell:odd {
+-fx-text-fill: black;
+-fx-border-color: white;
+-fx-background-color:white;
+}
+.list-view .list-cell:selected {
+-fx-text-fill: black;
+-fx-border-color: white;
+-fx-background-color:black;
+}
+.list-cell {
+   -fx-border-color: none ;
+   -fx-margin: 0px; 
+   -fx-padding:0px;
+   -fx-background-color:white;
+   
+}
+.listt{
+    -fx-text-background-color:white;
+    -fx-border-color:none;
+}
+.combo-box{
+    -fx-background-color: white;
+    -fx-font-family:'Open Sans';
+    -fx-font-size: 13px;
+}
+

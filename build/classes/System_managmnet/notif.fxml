@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox id="transat" fx:id="itemC" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="95.0" prefWidth="700.0" spacing="5.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-background-insets: 0; -fx-border-color: white;" styleClass=".transat" stylesheets="@ItemStyle.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System_managmnet.ItemController3">
+    <children>
+      <ImageView fitHeight="64.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/avatar-round.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="93.0" prefWidth="525.0">
+         <children>
+              <Label fx:id="content" prefHeight="55.0" prefWidth="448.0" text="KeepToo" textFill="#4a4b4d">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="content2" prefHeight="36.0" prefWidth="476.0" text="Label" textFill="#4a4b4d">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Line endX="-99.53553771972656" endY="66.29289245605469" startX="-100.0" />
+      <VBox prefHeight="51.0" prefWidth="171.0">
+         <children>
+            <HBox prefHeight="41.0" prefWidth="171.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="39.0" text=" " />
+                  <Label fx:id="time" text="Time" />
+               </children>
+            </HBox>
+            <Label text=" " />
+            <Label fx:id="date" prefHeight="23.0" prefWidth="120.0" text="date" />
+         </children>
+      </VBox>
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+</HBox>

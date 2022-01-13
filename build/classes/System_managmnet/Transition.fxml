@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System_managmnet.TransitionControleer">
+   <children>
+      <AnchorPane fx:id="slider" layoutY="52.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="397.0" style="-fx-background-color: white;" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="52.0">
+         <children>
+            <VBox layoutY="41.0" prefHeight="361.0" prefWidth="397.0" style="-fx-background-color: #DEDEDE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="397.0" style="-fx-background-color: #4E5669;">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="344.0" text="Add transaction" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="37.0" prefWidth="524.0">
+                     <children>
+                        <Label prefHeight="36.0" prefWidth="152.0" text="Choisir  l'action" textFill="#5b6166">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <RadioButton fx:id="vendre" mnemonicParsing="false" onAction="#vendselect" prefHeight="37.0" prefWidth="118.0" selected="true" text="Vendre" textFill="#5b6166">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="choisir" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="achat" mnemonicParsing="false" onAction="#achatselect" prefHeight="37.0" prefWidth="105.0" text="Achat" textFill="#bcbcbe" toggleGroup="$choisir" />
+                     </children>
+                  </HBox>
+                  <Label text=" " />
+                  <HBox prefHeight="38.0" prefWidth="397.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="55.0" text=" " />
+                        <Label fx:id="dest" alignment="TOP_LEFT" prefHeight="38.0" prefWidth="51.0" text="A" textFill="#5b6166">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font></Label>
+                        <Label prefHeight="18.0" prefWidth="50.0" text=" " />
+                        <ComboBox fx:id="combo" prefHeight="38.0" prefWidth="190.0" promptText="Choisir un contact" style="-fx-background-color: white;" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="41.0" prefWidth="424.0">
+                     <children>
+                        <HBox prefHeight="41.0" prefWidth="296.0">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="52.0" text=" " />
+                           </children>
+                        </HBox>
+                     </children></HBox>
+                  <HBox prefHeight="31.0" prefWidth="465.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="214.0" text="Choisir le prix de transaction" textFill="#5b6166">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <TextField fx:id="value" prefHeight="31.0" prefWidth="108.0" />
+                        <Label prefHeight="18.0" prefWidth="16.0" text=" " />
+                        <Label fx:id="devi" prefHeight="30.0" prefWidth="55.0" text="DZD" textFill="#5b6166" />
+                     </children>
+                  </HBox>
+                  <Label prefHeight="19.0" prefWidth="33.0" text=" " />
+                  <Label text=" " />
+                  <HBox prefHeight="52.0" prefWidth="397.0">
+                     <children>
+                        <Label prefHeight="52.0" prefWidth="153.0" text="Choisir la devise:" textFill="#5b6166">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <RadioButton fx:id="dz" mnemonicParsing="false" onAction="#dzselect" prefHeight="50.0" prefWidth="116.0" selected="true" text="DZD" textFill="#4e5669">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="devise" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="aed" mnemonicParsing="false" onAction="#aedselect" prefHeight="52.0" prefWidth="112.0" text="AED" textFill="#bcbcbe" toggleGroup="$devise" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="39.0" prefWidth="397.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="168.0" text=" " />
+                        <Button mnemonicParsing="false" onAction="#add" prefHeight="42.0" prefWidth="94.0" style="-fx-background-color: #4E5669;" text="Add" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Label prefHeight="43.0" prefWidth="327.0" text="Transactions" textFill="#00b4df">
+         <font>
+            <Font name="Open Sans SemiBold" size="29.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="panes" layoutY="105.0" prefHeight="438.0" prefWidth="577.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="423.0" AnchorPane.topAnchor="105.0">
+         <children>
+            <ListView fx:id="transacts" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="429.0" prefWidth="577.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Label fx:id="empty" layoutX="164.0" layoutY="204.0" text="Pas de transactions encore" visible="false">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Line fx:id="line" endX="584.0" endY="768.8857421875" startX="584.0" startY="301.8857727050781" stroke="#bcbcbe" strokeWidth="2.0" visible="false" AnchorPane.topAnchor="60.0" />
+      <AnchorPane fx:id="first_column" layoutX="-46.0" layoutY="50.0" prefHeight="50.0" prefWidth="577.0" style="-fx-background-color: whitesmoke;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label layoutX="33.0" layoutY="22.0" text="Nom" textFill="#5b6166">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="128.0" layoutY="7.0" prefHeight="50.0" prefWidth="69.0" text="Type d'action" textFill="#5b6166" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="310.0" layoutY="23.0" text="Date" textFill="#5b6166">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="493.0" layoutY="22.0" text="Devise" textFill="#5b6166">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="401.0" layoutY="22.0" text="Prix" textFill="#5b6166">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="197.0" layoutY="12.0" prefHeight="43.0" prefWidth="71.0" text="Numero de telephone" textFill="#5b6166" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Line endX="884.5502319335938" endY="10.0" layoutX="327.0" layoutY="40.0" startX="-94.94975280761719" startY="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Button fx:id="ajouter" layoutX="193.0" layoutY="4.0" mnemonicParsing="false" onAction="#deselect" prefHeight="43.0" prefWidth="169.0" style="-fx-border-color: #FF6E4F; -fx-background-color: white;" text="Ajouter transaction" textFill="#ff6e4f" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="slider1" layoutX="10.0" layoutY="49.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="404.0" style="-fx-background-color: white;" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <VBox layoutY="41.0" prefHeight="368.0" prefWidth="404.0" style="-fx-background-color: #DEDEDE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="397.0" style="-fx-background-color: #4E5669;">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="356.0" text="Edit transaction" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="33.0" fitWidth="60.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/2638320-64.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="33.0" prefWidth="404.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="209.0" text=" " />
+                        <Label fx:id="dtt" prefHeight="28.0" prefWidth="289.0" text="Date de transaction" textFill="#5b6166" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="37.0" prefWidth="524.0">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="155.0" text="Changer  l'action" textFill="#5b6166">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <RadioButton fx:id="vendre1" mnemonicParsing="false" onAction="#vendselect1" prefHeight="41.0" prefWidth="116.0" selected="true" text="Vendre" textFill="#5b6166">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="choisir1" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="achat1" mnemonicParsing="false" onAction="#achatselect1" prefHeight="37.0" prefWidth="94.0" text="Achat" textFill="#bcbcbe" toggleGroup="$choisir1" />
+                     </children>
+                  </HBox>
+                  <Label text=" " />
+                  <HBox prefHeight="41.0" prefWidth="424.0">
+                     <children>
+                        <HBox prefHeight="41.0" prefWidth="296.0">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="52.0" text=" " />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="31.0" prefWidth="465.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="229.0" text="Changer le prix de transaction" textFill="#5b6166">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <TextField fx:id="value1" prefHeight="26.0" prefWidth="100.0" />
+                        <Label prefHeight="18.0" prefWidth="16.0" text=" " />
+                        <Label fx:id="devi1" prefHeight="18.0" prefWidth="42.0" text="DZD" textFill="#5b6166" />
+                     </children>
+                  </HBox>
+                  <Label prefHeight="19.0" prefWidth="33.0" text=" " />
+                  <HBox prefHeight="45.0" prefWidth="404.0">
+                     <children>
+                        <Label prefHeight="46.0" prefWidth="169.0" text="Choisir la devise:" textFill="#5b6166">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <RadioButton fx:id="dz1" mnemonicParsing="false" onAction="#dzselect1" prefHeight="46.0" prefWidth="99.0" selected="true" text="DZD">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="devise1" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="aed1" mnemonicParsing="false" onAction="#aedselect1" prefHeight="45.0" prefWidth="94.0" text="AED" toggleGroup="$devise1" />
+                     </children>
+                  </HBox>
+                  <Label text=" " />
+                  <HBox prefHeight="41.0" prefWidth="404.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="57.0" text=" " />
+                        <Button mnemonicParsing="false" onAction="#edit" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: #4E5669;" text="Edit" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Label prefHeight="18.0" prefWidth="107.0" text=" " />
+                        <Button fx:id="close_menu1" mnemonicParsing="false" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: #BCBCBE;" text="Annuler">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Label fx:id="empty" text="Pas de transaction encore" visible="false" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 15, 2021, 4:34:29 PM
+    Author     : DELL
+*/
+@font-face { 
+    src: url('../fonts/OpenSans-SemiBold.ttf');
+}
+@font-face { 
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face { 
+    src: url('../fonts/OpenSans-Light.ttf');
+}
+
+.right-page-turn {
+    
+  -fx-background-color: derive(cadetblue, -20%); 
+  -fx-background-insets: 12; 
+  -fx-background-radius: 6;
+}
+
+
+.shorts:hover{
+  -fx-background-color:#BCBCBE;  
+}
+
+.shortcuts{
+    -fx-font-family:'Open Sans SemiBold';
+    -fx-font-size:14px;
+}
+.titles{
+    -fx-font-family:'Open Sans SemiBold';
+    -fx-font-size:14px;
+}
+.titles:hover{
+    -fx-background-color: #212D3A;
+}
+.infos{
+    -fx-font-family:'Open Sans';
+    -fx-font-size:14px;
+}
+.transact{
+    -fx-background-color: #F26A4E;
+}
+#nom{
+    -fx-font-weight: bold;
+}
+#prenom{
+    -fx-font-weight: bold ;
+}
+#menu{
+    -fx-background-color: linear-gradient(to top, #293746,black);
+}
+.subtit{
+    -fx-font-family:'Open Sans Light';
+    -fx-text-fill:  #212D3A;
+    -fx-font-size:14px;
+}

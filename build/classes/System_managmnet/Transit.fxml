@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="itemC" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="560.0" spacing="5.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-background-insets: 0; -fx-border-color: white;" styleClass="transat" stylesheets="@ItemStyle.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System_managmnet.ItemController4">
+    <children>
+        <ImageView fx:id="img" fitHeight="47.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+            <HBox.margin>
+                <Insets left="10.0" />
+            </HBox.margin>
+         <image>
+            <Image url="@../icons/A.png" />
+         </image>
+        </ImageView>
+        <Label fx:id="nom" prefHeight="52.0" prefWidth="85.0" text="KeepToo" textFill="#4a4b4d" wrapText="true" />
+      <Label fx:id="type" prefHeight="33.0" prefWidth="59.0" text="Type" textFill="#4a4b4d" />
+        <Label fx:id="tel" prefHeight="20.0" prefWidth="107.0" text="JFK" textFill="#4a4b4d">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Label>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+              <Label fx:id="date" prefHeight="30.0" prefWidth="115.0" text="10/11/2018" textFill="#4a4b4d" />
+            <Label fx:id="time" text="Label" textFill="#4a4b4d" />
+         </children>
+      </VBox>
+      <Label fx:id="price" prefHeight="20.0" prefWidth="97.0" text="DZ" textFill="#4a4b4d" />
+        <Label fx:id="curren" prefHeight="20.0" prefWidth="45.0" text="DZ" textFill="#4a4b4d">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Label>
+        <Button fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="17.0" minWidth="47.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="47.0" style="-fx-background-color: transparent;" styleClass="buttons" stylesheets="@ItemStyle.css" text=" ">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="21.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/iconfinder_353430_checkbox_pen_edit_pencil_icon_64px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="8.0" />
+         </font>
+        </Button>
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+</HBox>
